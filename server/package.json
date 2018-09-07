@@ -16,11 +16,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-coomit": "lint-staged && npm test"
+      "pre-coomit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.{js,ts,json,md}": [
+    "*.{js,json,md}": [
       "prettier --write",
       "npm run lint-autofix",
       "git add"
